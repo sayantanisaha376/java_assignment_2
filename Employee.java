@@ -1,3 +1,9 @@
+/* Create a Employee class with ename,designation,salary,email as instance variables.
+Create all getter/setter
+Now Create an Employee and print like:
+Ankan works as Developer with emailid ank@ibm.com and earns 5k per anum.*/
+
+
 class Employee{
 	private String ename;
 	private String designation;
