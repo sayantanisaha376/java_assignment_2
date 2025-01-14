@@ -1,3 +1,8 @@
+/*Create a Shop which sells only Mobiles.
+   Now create a customer and visit the shop and purchase a VIVO mobile if it has Android 15 only.*/
+//@Author:Sayantani Saha
+
+
 class Mobile {
     private String brand;
     private String model;
