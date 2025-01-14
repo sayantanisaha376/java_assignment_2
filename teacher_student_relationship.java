@@ -1,3 +1,11 @@
+/*. Create Teacher class with tname,subject and yrsOfExp with getter/setter
+   Create Student class with sname,degree and college with getter/setter
+   Now create another class having 2 static methods to create relationship b/w both 
+   The O/P should look like following:
+   Ankan takes java class under Amitava Sir
+   Amitava teaches OOPS design to Madhu who reads as Btech Student in UEM college*/
+
+
 class Teacher {
     private String tname;
     private String subject;
