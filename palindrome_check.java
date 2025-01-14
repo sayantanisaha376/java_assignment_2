@@ -1,3 +1,9 @@
+// Create a java class that will check whether a person's name is palindrome or not.
+//@Author:Sayatani Saha
+
+
+
+
 class Person {
     private String name;
 
