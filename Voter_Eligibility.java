@@ -1,3 +1,6 @@
+//Create a class to check where a student is elligible 2 vote in an election by checking age.
+
+
 class Student {
     private String name;
     private int age;
