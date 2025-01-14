@@ -1,3 +1,8 @@
+/*Apply Has-A relationship to create the following
+   A person HAS AN address.(USE LOMBOK)*/
+//@Author:Sayantani Saha
+
+
 import lombok.*;
 // Person class
 @Getter
