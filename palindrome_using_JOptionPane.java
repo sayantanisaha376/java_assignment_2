@@ -1,3 +1,5 @@
+//Create a java class that will check whether a person's name is palindrome or not.
+//@Author:Sayantani Saha
 import javax.swing.JOptionPane;
 
 class Person {
