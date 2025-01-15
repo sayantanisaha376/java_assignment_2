@@ -3,18 +3,12 @@
 
 
 
-
 class Person {
     private String name;
 
-    // Constructor
-    public Person(String name) {
-        this.name = name;
-    }
-
-    // Getter and Setter 
+    // Getter and Setter methods
     public String getName() {
-        return name;
+        return this.name;
     }
     public void setName(String name) {
         this.name = name;
@@ -49,13 +43,14 @@ class Person {
             System.out.println("Is palindrome: No");
         }
     }
-	
-	
+
     public static void main(String[] args) {
         // Create a person object
-        Person person = new Person("sayantani");
+        Person person = new Person();
+        person.setName("sayantani");
 
         // Display whether the person's name is a palindrome
         person.displayPalindromeCheck();
     }
 }
+
