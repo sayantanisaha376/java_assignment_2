@@ -5,14 +5,9 @@ import javax.swing.JOptionPane;
 class Person {
     private String name;
 
-    // Constructor
-    public Person(String name) {
-        this.name = name;
-    }
-
     // Getter and Setter methods
     public String getName() {
-        return name;
+        return this.name;
     }
     public void setName(String name) {
         this.name = name;
@@ -48,13 +43,12 @@ class Person {
         }
         JOptionPane.showMessageDialog(null, message);
     }
-	
-	public static void main(String[] args) {
 
+    public static void main(String[] args) {
         String name = JOptionPane.showInputDialog("Enter your name:");
 
-        
-        Person person = new Person(name);
+        Person person = new Person();
+        person.setName(name);
 
         person.displayPalindromeCheck();
     }
