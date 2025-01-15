@@ -2,14 +2,8 @@
     and add a travelling allowance of 1.5% of basic salary. Now find the annual salary of the employee.*/
 
 
-
-class EmployeeSalary{
+class EmployeeSalary {
     private double basicSalary;
-
-    // Constructor
-    public EmployeeSalary(double basicSalary) {
-        this.basicSalary = basicSalary;
-    }
 
     // Getter and Setter methods
     public double getBasicSalary() {
@@ -48,10 +42,10 @@ class EmployeeSalary{
         System.out.println("Monthly Travelling Allowance: " + calculateTravellingAllowance());
         System.out.println("Annual Salary: " + calculateAnnualSalary());
     }
-	
-	 public static void main(String[] args) {
-      
-        EmployeeSalary empS = new EmployeeSalary(40000); 
+
+    public static void main(String[] args) {
+        EmployeeSalary empS = new EmployeeSalary();
+        empS.setBasicSalary(40000); // Setting the basic salary using the setter method
         empS.displaySalaryDetails();
     }
 }
