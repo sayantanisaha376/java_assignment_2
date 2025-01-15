@@ -11,8 +11,8 @@ class Book {
     private String ISBN;
 
      // Getters&Setters
-	public String getTitle() {
-        return title;
+    public String getTitle() {
+        return this.title;
     }
     public void setTitle(String title) {
         this.title = title;
@@ -20,14 +20,14 @@ class Book {
 	
 	
 	public String getAuthor() {
-        return author;
+        return this.author;
     }
     public void setAuthor(String author) {
         this.author = author;
     }
 	
     public String getISBN() {
-        return ISBN;
+        return this.ISBN;
     }
     public void setISBN(String ISBN) {
         this.ISBN = ISBN;
