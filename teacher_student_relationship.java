@@ -13,12 +13,12 @@ class Teacher {
 
     // Getters and Setters
     public String getTname(){
-		return tname; }
+	return this.tname; }
     public void setTname(String tname){
 		this.tname = tname; }
 		
     public String getSubject(){
-		return subject; }
+	return this.subject; }
     public void setSubject(String subject){
 		this.subject = subject; }
 
