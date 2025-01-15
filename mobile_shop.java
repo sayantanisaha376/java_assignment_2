@@ -3,35 +3,29 @@
 //@Author:Sayantani Saha
 
 
-class Mobile {
+
+  class Mobile {
     private String brand;
     private String model;
     private String operatingSystem;
 
-    // Constructor
-    public Mobile(String brand, String model, String operatingSystem) {
-        this.brand = brand;
-        this.model = model;
-        this.operatingSystem = operatingSystem;
-    }
-
     // Getter and Setter methods
     public String getBrand() {
-        return brand;
+        return this.brand;
     }
     public void setBrand(String brand) {
         this.brand = brand;
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
     public void setModel(String model) {
         this.model = model;
     }
 
     public String getOperatingSystem() {
-        return operatingSystem;
+        return this.operatingSystem;
     }
     public void setOperatingSystem(String operatingSystem) {
         this.operatingSystem = operatingSystem;
@@ -88,11 +82,6 @@ class Shop {
 class Customer {
     private String name;
 
-    // Constructor
-    public Customer(String name) {
-        this.name = name;
-    }
-
     // Getter and Setter methods
     public String getName() {
         return name;
@@ -118,9 +107,20 @@ class MobileShop {
     public static void main(String[] args) {
         // Create shop and add mobiles
         Shop shop = new Shop();
-        Mobile vivo = new Mobile("AppleIphone", "iphone16", "iOS");
-        Mobile samsung = new Mobile("Samsung", "Galaxy S21", "Android 14");
-        Mobile onePlus = new Mobile("VIVO", "V21", "Android 15");
+        Mobile vivo = new Mobile();
+        vivo.setBrand("AppleIphone");
+        vivo.setModel("iphone16");
+        vivo.setOperatingSystem("iOS");
+
+        Mobile samsung = new Mobile();
+        samsung.setBrand("Samsung");
+        samsung.setModel("Galaxy S21");
+        samsung.setOperatingSystem("Android 14");
+
+        Mobile onePlus = new Mobile();
+        onePlus.setBrand("VIVO");
+        onePlus.setModel("V21");
+        onePlus.setOperatingSystem("Android 15");
 
         shop.addMobile(vivo);
         shop.addMobile(samsung);
@@ -130,7 +130,9 @@ class MobileShop {
         shop.displayAvailableMobiles();
         System.out.println("------------------------------------------------------------------------------------------------");
         // Create customer and visit shop to purchase a VIVO mobile with Android 15
-        Customer customer = new Customer("Sayantani");
+        Customer customer = new Customer();
+        customer.setName("Sayantani");
         customer.visitShopAndPurchaseMobile(shop, "VIVO", "Android 15");
     }
 }
+
