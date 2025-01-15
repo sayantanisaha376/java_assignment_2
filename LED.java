@@ -9,22 +9,22 @@ class LED {
     private double price;
 
      // Getters&Setters
-	public int getId() {
-        return id;
+    public int getId() {
+        return this.id;
     }
     public void setId(int id) {
         this.id = id;
     }
 	
-	public String getBrand() {
-        return brand;
+    public String getBrand() {
+        return this.brand;
     }
     public void setBrand(String brand) {
         this.brand = brand;
     }
 	
-	public double getPrice() {
-        return price;
+    public double getPrice() {
+        return this.price;
     }
     public void setPrice(double price) {
         this.price = price;
